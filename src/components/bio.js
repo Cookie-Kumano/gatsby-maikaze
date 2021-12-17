@@ -19,7 +19,10 @@ const Bio = () => {
             summary
           }
           social {
+            webpage
             twitter
+            mastodon
+            misskey
           }
         }
       }
@@ -31,25 +34,28 @@ const Bio = () => {
   const social = data.site.siteMetadata?.social
 
   return (
-    <div className="bio">
+    <div className="bio cookie-cards">
       <StaticImage
         className="bio-avatar"
         layout="fixed"
         formats={["auto", "webp", "avif"]}
-        src="../images/profile-pic.png"
+        src="../images/profile-pic.jpg"
         width={50}
         height={50}
         quality={95}
         alt="Profile picture"
       />
       {author?.name && (
-        <p>
-          Written by <strong>{author.name}</strong> {author?.summary || null}
-          {` `}
-          <a href={`https://twitter.com/${social?.twitter || ``}`}>
-            You should follow them on Twitter
-          </a>
-        </p>
+        <div>
+          <p>
+            <strong>{author.name}</strong> <br />
+            {author?.summary || null}
+          </p>
+          <a href={social.webpage}>WebPage</a>
+          <a href={social.twitter}>Twitter</a>
+          <a href={social.mastodon}>Mastodon</a>
+          <a href={social.misskey}>Misskey</a>
+        </div>
       )}
     </div>
   )
