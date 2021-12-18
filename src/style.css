@@ -98,8 +98,7 @@ h4,
 h5,
 h6 {
   font-family: var(--font-heading);
-  margin-top: var(--spacing-12);
-  margin-bottom: var(--spacing-6);
+  margin: var(--spacing-8) 0 var(--spacing-6) 0;
   line-height: var(--lineHeight-tight);
   letter-spacing: -0.025em;
 }
@@ -163,7 +162,7 @@ p {
   line-height: var(--lineHeight-relaxed);
   --baseline-multiplier: 0.179;
   --x-height-multiplier: 0.35;
-  margin: var(--spacing-0) var(--spacing-0) var(--spacing-8) var(--spacing-0);
+  /**margin: var(--spacing-0) var(--spacing-0) var(--spacing-8) var(--spacing-0);*/
   padding: var(--spacing-0);
 }
 
@@ -231,6 +230,7 @@ table thead tr th {
 
 a {
   color: var(--color-primary);
+  text-decoration: none;
 }
 
 a:hover,
@@ -249,6 +249,15 @@ a:focus {
 
 .top-list {
   padding-inline-start: 0;
+}
+
+.footer-credit {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-credit p {
+  margin: 0;
 }
 
 .global-wrapper {

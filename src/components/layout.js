@@ -24,10 +24,13 @@ const Layout = ({ location, title, children }) => {
     <div className="global-wrapper" data-is-root-path={isRootPath}>
       <header className="global-header">{header}</header>
       <main>{children}</main>
-      <footer>
-        CC BY-NC-ND {new Date().getFullYear()}, 
-        {` `}
-        <a href="https://cookie.kumano.moe/">Cookie</a>
+      <footer class="footer-credit">
+        <p>
+          CC BY-NC-ND {new Date().getFullYear()}, 
+          {` `}
+          <a href="https://cookie.kumano.moe/">Cookie</a>
+        </p>
+        <p>MAIKAZE Server</p>
       </footer>
     </div>
   )
