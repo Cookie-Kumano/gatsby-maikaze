@@ -313,7 +313,7 @@ a:focus {
 }
 
 .bio p {
-  margin-bottom: var(--spacing-0);
+  margin: 0 0 var(--spacing-0) 0;
 }
 
 .bio a {
