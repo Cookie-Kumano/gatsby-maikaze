@@ -59,7 +59,7 @@ SAMSUNG Galaxy S21
 ![](./img/mng_03.jpg)
 Logic Studio（とギャルゲ）
 
-![](./img/mbg_04.jpg)
+![](./img/mng_04.jpg)
 紲星あかり（VOCALOID4のほう）
 
 ![](./img/mng_05.jpg)
