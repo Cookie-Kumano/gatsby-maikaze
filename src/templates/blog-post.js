@@ -5,17 +5,14 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-const BlogPostTemplate = ({ data, location }) => {
-  const post = data.markdownRemark
-  const siteTitle = data.site.siteMetadata?.title || `Title`
-  const { previous, next } = data
+const BlogPostTemplate = ({
+  data: { previous, next, site, markdownRemark: post },
+  location,
+}) => {
+  const siteTitle = site.siteMetadata?.title || `Title`
 
   return (
     <Layout location={location} title={siteTitle}>
-      <Seo
-        title={post.frontmatter.title}
-        description={post.frontmatter.description || post.excerpt}
-      />
       <div className="cookie-cards">
         <article
           className="blog-post"
@@ -35,6 +32,7 @@ const BlogPostTemplate = ({ data, location }) => {
       <footer>
           <Bio />
       </footer>
+
       <div class="cookie-cards">
         <nav className="blog-post-nav">
           <ul
@@ -64,6 +62,16 @@ const BlogPostTemplate = ({ data, location }) => {
         </nav>
       </div>
     </Layout>
+  )
+}
+
+
+export const Head = ({ data: { markdownRemark: post } }) => {
+  return (
+    <Seo
+      title={post.frontmatter.title}
+      description={post.frontmatter.description || post.excerpt}
+    />
   )
 }
 

@@ -55,7 +55,7 @@
   --color-text-light: #616161;
   --color-heading: #424242;
   --color-accent: #b3bdc7;
-}
+
 
 /* HTML elements */
 
@@ -265,11 +265,13 @@ a:focus {
   max-width: var(--maxWidth-wrapper);
   padding: var(--spacing-10) var(--spacing-5);
 }
+
 /**
 .global-wrapper[data-is-root-path="true"] .bio {
   margin-bottom: var(--spacing-20);
 }
 **/
+
 .global-header {
   margin-bottom: var(--spacing-12);
 }

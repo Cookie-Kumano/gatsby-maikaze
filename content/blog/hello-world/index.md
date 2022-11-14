@@ -6,6 +6,7 @@ description: "Hello World"
 
 デフォルトで入ってたセカイに挨拶ページのマークダウン紹介がまあまあわかりやすいので、このまま放置
 
+
 Oh, and here's a great quote from this Wikipedia on
 [salted duck eggs](https://en.wikipedia.org/wiki/Salted_duck_egg).
 
@@ -224,6 +225,6 @@ This paragraph has some `code` in it.
 
     This paragraph has some `code` in it.
 
-![Alt Text](https://placehold.it/200x50 "Image Title")
+![Alt Text](https://via.placeholder.com/200x50 "Image Title")
 
-    ![Alt Text](https://placehold.it/200x50 "Image Title")
+    ![Alt Text](https://via.placeholder.com/200x50 "Image Title")
