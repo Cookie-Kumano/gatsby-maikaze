@@ -5,6 +5,8 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
+const seoTitle = "まいかぜだいありー"
+
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
@@ -12,19 +14,16 @@ const BlogIndex = ({ data, location }) => {
   if (posts.length === 0) {
     return (
       <Layout location={location} title={siteTitle}>
-        <Seo title="All posts" />
+        <Seo title={seoTitle} />
         <Bio />
-        <p>
-          No blog posts found. 
-
-        </p>
+        <p>No blog posts found.</p>
       </Layout>
     )
   }
 
   return (
     <Layout location={location} title={siteTitle}>
-      <Seo title="All posts" />
+      <Seo title={seoTitle} />
       <Bio />
       <ol class="top-list" style={{ listStyle: `none` }}>
         {posts.map(post => {
@@ -69,7 +68,7 @@ export default BlogIndex
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="All posts" />
+export const Head = () => <Seo title={seoTitle} />
 
 export const pageQuery = graphql`
   {

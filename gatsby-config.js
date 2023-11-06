@@ -1,4 +1,3 @@
-
 /**
  * Configure your Gatsby site with this file.
  *
@@ -10,19 +9,18 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Cookie's Blog`,
+    title: `まいかぜだいありー`,
     author: {
       name: `Cookie`,
       summary: `インターネットに漂う、ゼロ年代の亡霊です。`,
-
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `くっきーの適当ブログ`,
+    siteUrl: `https://blog.maikaze.moe/`,
     social: {
       webpage: `https://cookie.kumano.moe/`,
       twitter: `https://twitter.com/DE224_Cookie`,
       mastodon: `https://mstdn.y-zu.org/@Cookie`,
-      misskey:  `https://mi.maikaze.moe/@Cookie`
+      misskey: `https://mi.maikaze.moe/@Cookie`,
     },
   },
   plugins: [
@@ -121,7 +119,7 @@ module.exports = {
         background_color: `#f2f2f2`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#663399`,
+        theme_color: `#FFD600`,
         display: `minimal-ui`,
         icon: `src/images/maikaze-icon.png`, // This path is relative to the root of the site.
       },
