@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "Maikaze Diary",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "This is a fork project of the gatsby-starter-blog",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Cookie <cookie@kumano.moe>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/Cookie-Kumano/gatsby-maikaze/issues"
   },
   "dependencies": {
     "@fontsource/merriweather": "^5.0.8",
