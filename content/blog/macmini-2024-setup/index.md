@@ -52,6 +52,12 @@ $ defaults -currentHost write -g AppleFontSmoothing -int 0
 
 かつては「ユーザとグループ」にあったログイン時に自動で開くアプリの設定はここ。
 
+#### アクセシビリティ
+
+![ui_accessibility](./img/ui_accessibility.png)
+
+半透明のUI要素が視認性を大きく損ねているので、アクセシビリティの「ディスプレイ」から無効に。
+
 #### コントロールセンター
 
 メニューバーに表示されるアイコンなどはここで設定できる。ほとんどいらないので非表示設定に。
