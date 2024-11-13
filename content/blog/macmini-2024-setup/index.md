@@ -56,7 +56,7 @@ $ defaults -currentHost write -g AppleFontSmoothing -int 0
 
 ![ui_accessibility](./img/ui_accessibility.png)
 
-半透明のUI要素が視認性を大きく損ねているので、アクセシビリティの「ディスプレイ」から無効に。
+半透明のUI要素が視認性を大きく損ねているので、アクセシビリティの「ディスプレイ」から「透明度を下げる」を有効に。
 
 #### コントロールセンター
 
@@ -173,10 +173,12 @@ PowerShellを管理者権限で開く。
 22番が開いた。
 
 ```shell
-> netsh interface portproxy add v4tov4 listenport=10022 connectaddress=[WSL2のIP] connectport=22
+> netsh interface portproxy add v4tov4 listenport=22 connectaddress=[WSL2のIP] connectport=22
 ```
 
 これで22番へのアクセスがWSL2へ転送される。
+
+WSL2のネットワーク設定をミラーにする場合は、ポート転送の設定は不要。
 
 ### SSHの設定 (WSL2)
 
